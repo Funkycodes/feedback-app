@@ -1,13 +1,17 @@
 import React from "react";
-
-const Footer = ({ text }) => <footer> {text} </footer>;
+import FeedbackItem from "./components/feedback-item/FeedbackItem";
+import Header from "./components/header/Header";
+import "./App.css";
+import { Fragment } from "react";
 
 function App() {
   return (
-    <div className="app">
-      <h1>Feedback App</h1>
-      <Footer text={"made with love by theMaskedOtaku"} />
-    </div>
+    <Fragment>
+      <Header />
+      <div className="app">
+        <FeedbackItem />
+      </div>
+    </Fragment>
   );
 }
 

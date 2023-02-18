@@ -1,0 +1,30 @@
+.card {
+  background-color: #fff;
+  color: black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 98%;
+  max-width: 500px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.num-display {
+  --inset: -10px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  border-radius: 50%;
+  aspect-ratio: 1.2;
+  background-color: #ff6a95;
+  left: var(--inset);
+  top: var(--inset);
+}
+
+.num-display span {
+  text-align: center;
+}
